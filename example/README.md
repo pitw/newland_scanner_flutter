@@ -1,13 +1,7 @@
 # newlandscanner
 
 Optimized lib from **<https://pub.dev/packages/newlandscanner>**
-All credits to the original author [Mateusz Maziec](https://www.nexaion.de/)
-
-- Optimized imports
-- Fixed Android SDK version
-- Upgraded all libs
-
---------
+All credits to the original author.
 
 Capture SDK of [Newland Barcode Android devices](https://www.newland-id.com/de) for Flutter using native Intent broadcast receiver.
 
@@ -35,3 +29,7 @@ Newlandscanner.listenForBarcodes.listen((event) {
  log('BarcodeScanned: ${event.barcodeData}')
 });
 ```
+
+## Author
+
+- [Mateusz Maziec](https://www.nexaion.de/)
