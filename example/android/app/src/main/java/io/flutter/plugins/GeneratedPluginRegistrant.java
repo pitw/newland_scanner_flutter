@@ -18,7 +18,7 @@ public final class GeneratedPluginRegistrant {
     try {
       flutterEngine.getPlugins().add(new ch.pitw.newland_scanner.NewlandscannerPlugin());
     } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin newland_scanner, ch.pitw.newland_scanner.NewlandscannerPlugin", e);
+      Log.e(TAG, "Error registering plugin barcode_newland_flutter, ch.pitw.newland_scanner.NewlandscannerPlugin", e);
     }
   }
 }

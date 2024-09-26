@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:newland_scanner/newland_scan_result.dart';
-import 'package:newland_scanner/newland_scanner.dart';
+import 'package:barcode_newland_flutter/newland_scan_result.dart';
+import 'package:barcode_newland_flutter/newland_scanner.dart';
 
 void main() {
   runApp(const MyApp());

@@ -19,7 +19,7 @@ Add this to your package's pubspec.yaml file:
 
 ```
 dependencies:
-  newland_scanner: ^0.0.1
+  barcode_newland_flutter: ^0.0.1
 ```
 
 ### iOS

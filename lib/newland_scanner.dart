@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:newland_scanner/newland_scan_result.dart';
+import 'package:barcode_newland_flutter/newland_scan_result.dart';
 
 class Newlandscanner {
   static const EventChannel _eventChannel =
