@@ -4,6 +4,7 @@ import 'dart:async';
 import 'package:barcode_newland_flutter/newland_scan_result.dart';
 import 'package:barcode_newland_flutter/newland_scanner.dart';
 
+/// Runs the MyApp widget as the main entry point of the application.
 void main() {
   runApp(const MyApp());
 }

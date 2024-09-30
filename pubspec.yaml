@@ -1,8 +1,7 @@
 name: barcode_newland_flutter
-description: Wrapper for Newland Scanner SDK and Flutter
-version: 1.0.0
+description: A simple and easy wrapper for the Newland Scanner Android SDK. Easily scan barcodes with Flutter and Newland Devices.
+version: 1.0.1
 homepage: https://www.pitw.ch
-
 environment:
   sdk: ">=2.16.1 <4.0.0"
   flutter: ">=2.5.0"
