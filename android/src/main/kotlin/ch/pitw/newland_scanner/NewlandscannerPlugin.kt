@@ -1,5 +1,7 @@
 package ch.pitw.newland_scanner
 
+import android.content.Context
+import android.os.Build
 import androidx.annotation.NonNull
 import ch.pitw.newland_scanner.receiver.BarcodeScanReceiver
 
@@ -27,10 +29,18 @@ class NewlandscannerPlugin : FlutterPlugin, MethodCallHandler {
             override fun onListen(arguments: Any?, events: EventChannel.EventSink?) {
                 scanReceiver = BarcodeScanReceiver(events)
 
-                flutterPluginBinding.applicationContext.registerReceiver(
-                    scanReceiver,
-                    BarcodeScanReceiver.filter
-                )
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    flutterPluginBinding.applicationContext.registerReceiver(
+                        scanReceiver,
+                        BarcodeScanReceiver.filter,
+                        Context.RECEIVER_EXPORTED
+                    )
+                } else {
+                    flutterPluginBinding.applicationContext.registerReceiver(
+                        scanReceiver,
+                        BarcodeScanReceiver.filter
+                    )
+                }
             }
 
             override fun onCancel(arguments: Any?) {
